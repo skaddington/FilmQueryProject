@@ -165,9 +165,9 @@ public class Film {
 		if (getClass() != obj.getClass())
 			return false;
 		Film other = (Film) obj;
-		return Objects.equals(description, other.description) && filmId == other.filmId
-				&& language == other.language && length == other.length && Objects.equals(rating, other.rating)
-				&& releaseYear == other.releaseYear && rentalDuration == other.rentalDuration
+		return Objects.equals(description, other.description) && filmId == other.filmId && language == other.language
+				&& length == other.length && Objects.equals(rating, other.rating) && releaseYear == other.releaseYear
+				&& rentalDuration == other.rentalDuration
 				&& Double.doubleToLongBits(rentalRate) == Double.doubleToLongBits(other.rentalRate)
 				&& Double.doubleToLongBits(replacementCost) == Double.doubleToLongBits(other.replacementCost)
 				&& Objects.equals(specialFeatures, other.specialFeatures) && Objects.equals(title, other.title);
